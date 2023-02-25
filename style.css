@@ -345,6 +345,7 @@ BY DETERMINING IT'S CHILD POSITION
 #product1 .pro .desc i {
   color: #ffa838;
   font-size: 18.5px;
+  padding-right: 3px;
 }
 
 #product1 .pro .desc h4 {

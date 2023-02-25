@@ -1,3 +1,8 @@
+<?php 
+  require_once "database/creation.php";
+  require_once "database/insertion.php";
+?>
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -72,7 +77,7 @@
       </div>
     </section>
 
-    <section id="product1" class="section-p2">
+    <!-- <section id="product1" class="section-p2">
       <h2>Highest Rated Games</h2>
       <p>Most Played</p>
       <div class="pro-container">
@@ -205,6 +210,12 @@
           <a href="#"><i class="fa fa-cart-shopping fa-xl cart"></i></a>
         </div>
       </div>
+    </section> -->
+
+    <section id="product1" class="section-p2">
+      <?php
+          include "database/products.php";
+      ?>
     </section>
 
     <section id="banner" class="section-p3">
