@@ -2,7 +2,8 @@
 include "connection.php";
 
 // Select all products from the database
-$sql = "SELECT * FROM products";
+$sql = "SELECT * FROM products
+        LIMIT 8";
 $result = mysqli_query($conn, $sql);
 
 // Check if there are any products

@@ -10,6 +10,14 @@ $img5 = mysqli_real_escape_string($conn, file_get_contents('C:\xampp\htdocs\ecom
 $img6 = mysqli_real_escape_string($conn, file_get_contents('C:\xampp\htdocs\ecommerce\img\products\p6.png'));
 $img7 = mysqli_real_escape_string($conn, file_get_contents('C:\xampp\htdocs\ecommerce\img\products\p7.png'));
 $img8 = mysqli_real_escape_string($conn, file_get_contents('C:\xampp\htdocs\ecommerce\img\products\p8.png'));
+$img9 = mysqli_real_escape_string($conn, file_get_contents('C:\xampp\htdocs\ecommerce\img\products\p9.png'));
+$img10 = mysqli_real_escape_string($conn, file_get_contents('C:\xampp\htdocs\ecommerce\img\products\p10.png'));
+$img11 = mysqli_real_escape_string($conn, file_get_contents('C:\xampp\htdocs\ecommerce\img\products\p11.png'));
+$img12 = mysqli_real_escape_string($conn, file_get_contents('C:\xampp\htdocs\ecommerce\img\products\p12.png'));
+$img13 = mysqli_real_escape_string($conn, file_get_contents('C:\xampp\htdocs\ecommerce\img\products\p13.png'));
+$img14 = mysqli_real_escape_string($conn, file_get_contents('C:\xampp\htdocs\ecommerce\img\products\p14.png'));
+$img15 = mysqli_real_escape_string($conn, file_get_contents('C:\xampp\htdocs\ecommerce\img\products\p15.png'));
+$img16 = mysqli_real_escape_string($conn, file_get_contents('C:\xampp\htdocs\ecommerce\img\products\p16.png'));
 
 // Check if the Table is Empty
 $sql = "SELECT COUNT(*) AS total FROM products";
@@ -27,7 +35,15 @@ if($row['total'] == 0){
             ('Valorant', 'Riot Games', '5', 'Free', '$img5'),
             ('Cyberpunk 2077', 'CD Projekt Red', '5', 'Php 2,430', '$img6'),
             ('Red Dead Redemption 2', 'Rockstar Games', '5', 'Php 2,300', '$img7'),
-            ('Dead By Daylight', 'Behaviour Interactive', '5', 'Php 499.99', '$img8')";
+            ('Dead By Daylight', 'Behaviour Interactive', '5', 'Php 499.99', '$img8'),
+            ('Brawlhala', 'Blue Mammoth Games', '5', 'Free', '$img9'),
+            ('Far Cry 6', 'Ubisoft Toronto', '5', 'Php 2,300', '$img10'),
+            ('FIFA 23', 'Electronic Arts', '5', 'Php 2,999', '$img11'),
+            ('Watch Dogs: Legion', 'Ubisoft Toronto', '5', 'Php 2,200', '$img12'),
+            ('WILD HEARTS', 'Housemarque', '5', 'Php 2,999', '$img13'),
+            ('Fall Guys', 'Mediatonic', '5', 'Free', '$img14'),
+            ('Rocket League', 'Psyonix', '5', 'Free', '$img15'),
+            ('Riders Republic', 'Ubisoft Annecy', '5', 'Php 2,300', '$img16')";
 
     // Execute the SQL Statement to Insert Data
     if (mysqli_query($conn, $insertSql)) {
