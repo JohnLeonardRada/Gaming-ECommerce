@@ -2,7 +2,7 @@
 include "connection.php";
 
 // Select all products from the database
-$sql = "SELECT * FROM products";
+$sql = "SELECT * FROM (SELECT * FROM products ORDER BY id DESC LIMIT 4) sub ORDER BY id ASC";
 $result = mysqli_query($conn, $sql);
 
 // Check if there are any products
@@ -12,7 +12,7 @@ if (mysqli_num_rows($result) > 0) {
 
   // Loop through the products and generate the HTML for each product
   while ($row = mysqli_fetch_assoc($result)) {
-    echo '<div class="pro" onclick="window.location.href=\'sproduct.php\'">';
+    echo '<div class="pro">';
     echo '<img src="data:image/png;base64,' . base64_encode($row['product_image']) . '" alt="" />';
     echo '<div class="desc">';
     echo '<span>' . $row['product_studio'] . '</span>';

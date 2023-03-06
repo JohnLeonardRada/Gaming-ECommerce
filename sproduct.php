@@ -37,21 +37,86 @@
       </div>
     </section>
 
-    <section id="page-header">
-      <h2>#stayhome</h2>
-      <p>Save more with coupons & up to 70% off!</p>
+    <section id="pro-details" class="section-single-product">
+      <div class="single-pro-image">
+        <img src="img/products/p1.png" width="100%" id="MainImg" class="single-image" alt="" />
+        <div class="small-img-group">
+          <div class="small-img-col">
+            <img
+              src="img/products/p1.png"
+              width="100%"
+              id="MainImg"
+              class="small-img"
+              alt=""
+            />
+          </div>
+          <div class="small-img-col">
+            <img
+              src="img/products/p2.png"
+              width="100%"
+              id="MainImg"
+              class="small-img"
+              alt=""
+            />
+          </div>
+          <div class="small-img-col">
+            <img
+              src="img/products/p3.png"
+              width="100%"
+              id="MainImg"
+              class="small-img"
+              alt=""
+            />
+          </div>
+          <div class="small-img-col">
+            <img
+              src="img/products/p4.png"
+              width="100%"
+              id="MainImg"
+              class="small-img"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+
+      <div class="single-pro-details">
+        <h6>Shop/Games</h6>
+        <h4>Genshin Impact</h4>
+        <h2>FREE</h2>
+
+        <!-- <select>
+                <option>Select Size</option>
+                <option>XL</option>
+                <option>2XL</option>
+                <option>Small Large</option>
+                <option>Large</option>
+            </select>
+            <input type="number" value="1"> -->
+
+        <h4>Game Details</h4>
+        <p>
+          Genshin Impact is a free-to-play action role-playing game developed
+          and published by miHoYo Co., Ltd. Outside of China, the publisher is
+          miHoYo's subsidiary Cognosphere Pte., Ltd. HoYoverse. The game
+          features a fantasy open-world environment and action based combat
+          system using elemental magic, character switching, and gacha
+          monetization system for players to obtain new characters, weapons, and
+          other resources. The game can only be played with an internet
+          connection and features a limited multiplayer mode allowing up to four
+          players in a world.
+        </p>
+
+        <button class="normal">Add To Cart</button>
+      </div>
     </section>
 
     <section id="product1" class="section-p2">
+      <h2>Featured Games</h2>
+      <p>Spring / Summer</p>
       <?php 
-        include "database/shop-products.php"
+        include "database/sproduct.php";
       ?>
-    </section>
-
-    <section id="pagination" class="section-p2">
-        <a href="#">1</a>
-        <a href="#">2</a>
-        <a href="#"><i class="fa fa-arrow-right"></i></a>
     </section>
 
     <section id="newsletter" class="section-p6">

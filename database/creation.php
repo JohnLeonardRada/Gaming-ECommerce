@@ -1,5 +1,6 @@
 <?php 
 include "connection.php";
+ob_start();
 
 // SQL Statement to Create the Table
 $sql = "CREATE TABLE products (
@@ -13,11 +14,12 @@ $sql = "CREATE TABLE products (
 
 // Execute the SQL Statement to Create the Table
 if (mysqli_query($conn, $sql)) {
-    echo "Table products created successfully";
+    print "Table products created successfully";
 } else {
-    echo "Error creating table: " . mysqli_error($conn);
+    print "Error creating table: " . mysqli_error($conn);
 }
 
+ob_end_clean();
 mysqli_close($conn);
 
 ?>

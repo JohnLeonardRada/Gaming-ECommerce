@@ -1,5 +1,6 @@
 <?php 
 include "connection.php";
+ob_start();
 
 // Read the Contents of the Image File and Convert to Binary Format
 $img1 = mysqli_real_escape_string($conn, file_get_contents('C:\xampp\htdocs\ecommerce\img\products\p1.png'));
@@ -47,15 +48,15 @@ if($row['total'] == 0){
 
     // Execute the SQL Statement to Insert Data
     if (mysqli_query($conn, $insertSql)) {
-        echo "New products created successfully";
+        print "New products created successfully";
     } else {
-        echo "Error inserting data: " . mysqli_error($conn);
+        print "Error inserting data: " . mysqli_error($conn);
     }
 } else {
-    echo "Data Already Exists in the Table.";
+    print "Data Already Exists in the Table.";
 }
 
-
+ob_end_clean();
 mysqli_close($conn);
 
 ?>
