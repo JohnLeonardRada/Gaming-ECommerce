@@ -25,6 +25,7 @@
         <ul id="navbar">
           <li><a class="active" href="index.html">Home</a></li>
           <li><a href="shop.php">Shop</a></li>
+          <li><a href="contact.php">Contact</a></li>
           <li id="lg-bag">
             <a href="cart.html"><i class="fa fa-bag-shopping"></i></a>
           </li>

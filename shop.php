@@ -25,6 +25,7 @@
         <ul id="navbar">
           <li><a href="index.php">Home</a></li>
           <li><a class="active" href="shop.php">Shop</a></li>
+          <li><a href="contact.php">Contact</a></li>
           <li id="lg-bag">
             <a href="cart.html"><i class="fa fa-bag-shopping"></i></a>
           </li>
@@ -37,7 +38,7 @@
       </div>
     </section>
 
-    <section id="page-header">
+    <section id="shop-page-header">
       <h2>#stayhome</h2>
       <p>Save more with coupons & up to 70% off!</p>
     </section>
